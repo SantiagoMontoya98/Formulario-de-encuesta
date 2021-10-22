@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(0, 128, 0, 0.7),
+      rgba(121, 252, 121, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+#description {
+  font-size: 1.5vw;
+  font-style: italic;
+  margin-top: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3vw;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+h1,
+p,
+label {
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+#survey-form {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 128, 0, 0.8);
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: width 500ms ease-in;
+}
+
+input::placeholder,
+textarea::placeholder,
+select,
+option {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#survey-form input,
+textarea {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.form-container {
+  margin: 0 auto 1rem auto;
+  padding: 0.25rem;
+}
+
+.form-container p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #444a50;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 0.6rem;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+textarea,
+button {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+textarea {
+  resize: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+#submit {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1.2rem;
+  font-size: 1.3rem;
+  color: white;
+  cursor: pointer;
+  border-width: 0;
+  border-radius: 0.3rem;
+  transition: background-color 300ms ease, transform 500ms ease;
+}
+
+#submit:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: scale(0.99);
+}
+
+@media screen and (max-width: 780px) {
+  #survey-form {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  #survey-form {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #survey-form {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #survey-form {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #survey-form {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #survey-form {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  #survey-form {
+    width: 250px;
+  }
+}
